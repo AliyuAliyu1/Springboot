@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.student;
 import jakarta.persistence.*;
 
 import java.time.LocalDate;
@@ -20,15 +20,10 @@ public class Student {
     private String name;
     private String email;
     private LocalDate dob;
+//    @Transient
     private Integer age;
 
-    public Student(Integer age,Long id,LocalDate dob, String name,String email){
-     this.age=age;
-     this.id=id;
-     this.dob=dob;
-     this.email=email;
-     this.name=name;
-    }
+
 
     public Student() {
     }
